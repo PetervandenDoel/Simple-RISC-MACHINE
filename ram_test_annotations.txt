@@ -1,0 +1,15 @@
+@00 MOV R0, #01001110 //switch adress memory location is in R0
+@01 MOV R1, #01001111 //LED adress memory location is in R1
+@02 LDR R0,[R0] //load switch adress from memory into R0
+@03 LDR R1,[R1] //load LED adress from memory into R1
+@04 MOV R2,#01000000 //move an adress corresponding to 2'h40 into R2
+@05 MOV R3,#00110011 //put a number into R3 to move into adress in R2 with offset
+@06 STR R3,[R2,#00010] //move value in R3 into R2+2
+@07 LDR R4,[R2,#00010]//move value from adress R2+2 into register R4
+@08 STR R4,[R1] //write 00110011 in R4 into LEDs
+@09 LDR R5,[R0] //read from switches into R5
+@0A MOV R5,R5 //write the value from switches into output by copying R5 to itself
+@0B STR R5,[R1] //write the value from switches into the LEDs
+@0C HALT
+@4E word. adress of switches 
+@4F word. adress of LEDS
