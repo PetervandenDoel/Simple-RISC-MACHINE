@@ -15,6 +15,12 @@ AND with a bit shifted operand
 
 MVN with a bit shifted operand  
 
+LDR with an immediate operand offset to the base adress  
+
+STR with an immediate operand offset to the base adress  
+
+HALT instruction to stop the execution of instructions and updating of the program counter
+
 
 
 ![image](https://user-images.githubusercontent.com/73015873/153132443-40ed14b6-0f3c-44b5-9a3c-4e7ac476b4c3.png)
