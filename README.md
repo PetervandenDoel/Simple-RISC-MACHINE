@@ -1,6 +1,8 @@
 # Simple-RISC-machine-hardware
 Simple RISC machine
 
+This project was a collaborative effort with another UBC student
+
 This is a simple RISC computer written in synthesizable verilog that can execute ARM assembly instructions with 16 bit encodings. The instructions are read from an initialized memory and executed in order.
 The instruction encodings are as follows
 MOV with an immediate operand  
